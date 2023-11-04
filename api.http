@@ -1,0 +1,26 @@
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "cat",
+    "author" : "hazuri"
+}
+
+###
+
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "dog" , 
+    "author" : "shakespeare"
+}
+
+###
+DELETE  http://localhost:3001/books/5 HTTP/1.1
+Content-Type: application/json

@@ -6,8 +6,8 @@ async function SearchImages(term) {
       params: {
         client_id: "WW3pF4mIvm2eYj3LS8oNqLsmwgY2Sl4h7839bXFHGcE",
         query: term,
-        w: 400,
-        h: 300,
+        w: 200,
+        h: 200,
       },
     });
     const urls = response.data.results.map(

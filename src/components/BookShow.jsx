@@ -37,7 +37,7 @@ function BookShow({ book, deleteBook, editBook }) {
       <img src={image} />
 
       {edit ? (
-        <BookEdit book={book} editImg = {editImg} />
+        <BookEdit book={book} editImg={editImg} editBook={editBook} />
       ) : (
         <h3>
           <strong>{book.title}</strong>

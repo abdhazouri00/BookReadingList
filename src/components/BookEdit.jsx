@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BookEdit({ book, titleContent , editImg }) {
+function BookEdit({ book, titleContent , editImg , editBook }) {
   const [inputValue, setInputValue] = useState(book.title);
   const [editing, setEditing] = useState(true);
 
@@ -13,6 +13,7 @@ function BookEdit({ book, titleContent , editImg }) {
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
+    editBook(book.id , e.target.value);
   };
 
   return (
